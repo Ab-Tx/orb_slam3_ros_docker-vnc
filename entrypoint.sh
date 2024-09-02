@@ -362,6 +362,7 @@ cd /home/ubuntu/catkin_ws
 source /opt/ros/noetic/setup.sh
 catkin_make
 source ./devel/setup.sh
+chown ubuntu: -R /home/ubuntu/catkin_ws # Give user permission to edit ros workspace files
 
 touch /home/ubuntu/.bashrc 
 echo "source /opt/ros/noetic/setup.sh" >> /home/ubuntu/.bashrc 

@@ -4,7 +4,11 @@ The VNC connection is not encrypted by default.
 
 # Building the image
 
-Clone this repo and then build the image:
+Clone this repo and ensure "entrypoint.sh" is executable:
+```bash
+chmod +x ./entrypoint.sh
+```
+Then build the image:
 ```bash
 docker build -t orbslam3 -f ./Dockerfile .
 ```
